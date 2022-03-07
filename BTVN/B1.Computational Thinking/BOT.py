@@ -3,8 +3,8 @@ lst = []
 for i in range (n):
     lst.append(int(input()))
 loi = 0
-a=0
-b=0
+p=0
+q=0
 for i in range (n):
     sum = 0
     sum += lst[i]
@@ -13,8 +13,8 @@ for i in range (n):
             sum += lst[j]
         if sum > loi:
             loi = sum
-            a = i+1
-            b = j+1
+            p = i+1
+            q = j+1
         j+=1
-print(a," ", b, " ", loi)
+print(p," ", q, " ", loi)
     
